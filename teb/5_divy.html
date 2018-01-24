@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <meta charset="utf-8">
+    <title> Divy </title>
+    <link rel="stylesheet" href="style/style1.css">
+
+
+
+    <body>
+
+        <!--<div id="d1">X</div>
+        <div id="d2">+</div>
+        <div id="d3">Y</div>
+        <div id="d4">=</div>
+        <div id="d5">Wynik</div>-->
+
+        <div id="x" class="lewy">X</div>
+        <div class="lewy">+</div>
+        <div id="y" class="lewy">Y</div>
+        <div class="lewy">=</div>
+        <div id="wynik" class="lewy">Wynik</div>
+
+        <script>
+            var x = prompt("Podaj x");
+                x = parseFloat(x);
+            var y = prompt("Podaj y");
+                y = parseFloat(y);
+            var divX = document.getElementById("x");
+            divX.innerHTML = x;
+            var divY =  document.getElementById("y");
+            divY.innerHTML = y;
+
+            var suma = x + y;
+            var wynik = document.getElementById("wynik");
+            wynik.innerHTML = suma;
+        </script>
+
+    </body>
+
+    </head>
+</html>
