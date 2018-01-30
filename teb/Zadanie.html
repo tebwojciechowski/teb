@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+     <meta charset="utf-8">
+    <title> Kalkulator </title>
+    <link rel="stylesheet" href="style/style1.css">
+
+    </head>
+
+    <body>
+     <h1> Pola </h1>
+
+
+        <script>
+            var x = prompt("Podaj długość boku");
+            var y = prompt("Podaj długość wysokości");
+            x = parseInt(x);
+            y = parseInt(y);
+            var mnozenie = x * y;
+            var wynik = mnozenie / 2;
+            document.write ("Pole trójkąta : " + wynik + "cm<sup>2</sup><br>");
+
+        </script>
+
+        <script>
+            var x = prompt("Podaj długość boku");
+            x = parseInt(x);
+            var wynik = x * x;
+            document.write ("Pole kwadratu : " + wynik + "cm<sup>2</sup><br>");
+        </script>
+
+        <script>
+            var x = prompt("Podaj długość pierwszego boku");
+            var y = prompt("Podaj długość drugiego boku");
+            x = parseInt(x);
+            y = parseInt(y);
+            var wynik = x * y;
+            document.write ("Pole prostokąta : " + wynik + "cm<sup>2</sup><br>");
+        </script>
+
+
+        <script>
+            var x = prompt("Podaj długość pierwszego boku");
+            var y = prompt("Podaj długość drugiego boku");
+            var z = prompt("Podaj długość wysokości");
+            x = parseInt(x);
+            y = parseInt(y);
+            z = parseInt(z);
+            var dodawanie = x + y;
+            var mnozenie = dodawanie * z;
+            var wynik = mnozenie / 2;
+            document.write ("Pole trapezu : " + wynik + "cm<sup>2</sup><br>");
+        </script>
+
+        <script>
+            var d = prompt("Podaj średnicę okręgu");
+            d = parseInt(d);
+            var r = d / 2 ;
+            var wynik = r * r;
+            document.write("Pole okręgu : " + wynik + "π<sup>2</sup>");
+        </script>
+
+
+
+    </body>
+
+</html>
