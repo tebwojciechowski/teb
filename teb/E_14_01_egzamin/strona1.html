@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>PROSTE DZIAŁANIA</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+        <body>
+
+            <div id="baner"><img src="baner.jpg"></div>
+
+            <div id="menu"> Menu </div>
+            <div id="tresc"> <form>
+            <h1>PROSTE DZIAŁANIA</h1>
+                    Podaj pierwszą liczbę: <input type="number" id="pie"><br><br>
+                    Podaj drugą liczbę: <input type="number" id="dru"><br><br>
+
+                </form>
+
+                    <button id="dod"> DODAWANIE </button>
+                    <button id="ode"> ODEJMOWANIE </button>
+                    <button id="mno"> MNOŻENIE </button>
+                    <button id="dzi"> DZIELENIE </button><br><br>
+
+                    <div id="kom">
+                        konunikat
+                    </div>
+
+                    <script>
+                        var elPie = document.getElementById("pie");
+                        var elDru = document.getElementById("dru");
+                        var elDod = document.getElementById("dod");
+                        var elOde = document.getElementById("ode");
+                        var elMno = document.getElementById("mno");
+                        var elDzi = document.getElementById("dzi");
+                        var elKom = document.getElementById("kom");
+
+                        function puste(){
+                            if(elPie.value.length == 0 || elDru.value.length == 0){
+                                elKom.innerHTML = "Puste pole pierwsze";
+                            }
+                                else{
+                                    elKom.innerHTML = "";
+                                }
+                        }
+
+                        function Dod(){
+                            if(elPie.value.length != 0 && elDru.value.length != 0){
+                            var x = parseFloat(elPie.value);
+                            var y = parseFloat(elDru.value);
+                            elKom.innerHTML = x + y;
+                            }
+                        }
+
+                            function Ode(){
+                            if(elPie.value.length != 0 && elDru.value.length != 0){
+                            var x = parseFloat(elPie.value);
+                            var y = parseFloat(elDru.value);
+                            elKom.innerHTML = x - y;
+                            }
+                        }
+                            function Mno(){
+                            if(elPie.value.length != 0 && elDru.value.length != 0){
+                            var x = parseFloat(elPie.value);
+                            var y = parseFloat(elDru.value);
+                            elKom.innerHTML = x * y;
+                            }
+                        }
+                            function Dzi(){
+                            if(elPie.value.length != 0 && elDru.value.length != 0){
+                            var x = parseFloat(elPie.value);
+                            var y = parseFloat(elDru.value);
+                            elKom.innerHTML = x / y;
+                            }
+                        }
+                        elDod.addEventListener("click", puste);
+                        elOde.addEventListener("click", puste);
+                        elMno.addEventListener("click", puste);
+                        elDzi.addEventListener("click", puste);
+
+
+                        elDod.addEventListener("click", Dod);
+                        elOde.addEventListener("click", Ode);
+                        elMno.addEventListener("click", Mno);
+                        elDzi.addEventListener("click", Dzi);
+
+
+                    </script>
+
+
+
+            </div>
+
+
+        </body>
+
+</html>
