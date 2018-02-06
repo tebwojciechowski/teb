@@ -10,9 +10,21 @@
 
         <body>
 
-            <div id="baner"><img src="baner.jpg"></div>
+            <div id="baner"><a href="index.html"><img src="baner.jpg"></a> </div>
 
-            <div id="menu"> Menu </div>
+            <div id="menu"> Menu
+
+            <ul>
+                <li>
+                    <a href="strona1.html">-proste działania</a>
+                    </li>
+                <li>
+
+                    <a href="strona2.html">-potęgowanie</a>
+                 </li>
+            </ul>
+
+            </div>
             <div id="tresc"> <form>
             <h1>PROSTE DZIAŁANIA</h1>
                     Podaj pierwszą liczbę: <input type="number" id="pie"><br><br>
@@ -73,8 +85,15 @@
                             if(elPie.value.length != 0 && elDru.value.length != 0){
                             var x = parseFloat(elPie.value);
                             var y = parseFloat(elDru.value);
+
+                                if (elDru.value != 0)
+
                             elKom.innerHTML = x / y;
+                                else
+                                elKom.innerHTML = "nie dziel przez zero";
+
                             }
+
                         }
                         elDod.addEventListener("click", puste);
                         elOde.addEventListener("click", puste);

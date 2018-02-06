@@ -9,9 +9,14 @@ body {
 #menu {
     float: left;
     width: 320px;
+
 }
 
 #tresc {
     float: left;
     width: 480px;
+}
+li {
+    list-style: none;
+    margin-left: -40px;
 }
